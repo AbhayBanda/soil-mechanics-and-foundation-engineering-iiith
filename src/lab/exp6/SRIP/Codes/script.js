@@ -1,3 +1,20 @@
+
+$(document).ready(function() {
+	$("#VHT").click(function() {
+		$("#mycanvas2").hide();
+		$("#mycanvas").show();
+	});
+});
+$(document).ready(function() {
+	$("#CHT").click(function() {
+		$("#mycanvas").hide();
+		$("#mycanvas2").show();
+	});
+});
+
+
+
+
 var canvas = document.getElementById("mycanvas");
 var ctx = canvas.getContext("2d");
 canvas.width = 700;
@@ -40,7 +57,7 @@ fillColor(326.5, 120, 22, 210, "#4679D5");
 fillColor(226.5, 326.5, 222, 247,"#4679D5");
 drawLine(225, 380, 225, 0);
 drawLine(225, 530, 225, 0);
-fillColor(226.5, 381.5, 222, 147, "brown")
+fillColor(226.5, 381.5, 222, 147, "#964625")
 drawLine(225, 515, -100, 0);
 drawLine(450, 515, 100, 0);
 fillColor(126.5, 516.5, 96.5, 57, "#4679D5");
@@ -133,7 +150,7 @@ function animations()
 			waterDrops(360, y1 + 2);
 			waterDrops(420, y1 + 2);
 			ctx5 = canvas.getContext("2d");
-			ctx5.fillStyle = "brown";
+			ctx5.fillStyle = "#964625";
 			ctx.fillRect(230, 484, 218, y);
 			y += 0.1;
 			y1 += 0.1;
@@ -149,4 +166,76 @@ function animations()
 			cancelAnimationFrame(id);	// Ends the Animation
 		}
 }
-//animations();
+
+
+var canvas2 = document.getElementById("mycanvas2");
+var ctx6 = canvas2.getContext("2d");
+canvas2.width = 700;
+canvas2.height = 800;
+canvas2.style.border = "10px solid blue";
+ctx6.font = "20px bold";
+ctx6.fillStyle = "blue";
+ctx6.fillText("Constant head test",canvas2.width/2 - 80 , 40);
+
+function drawLine2(initX, initY, width, height) {
+ctx6.lineWidth = 3;
+ctx6.strokeRect(initX + 35, initY + 75, width, height);
+ctx6.strokeStyle = "black";
+}
+
+drawLine2(200, 50, 0, 100);
+drawLine2(200, 150, 150, 0);
+drawLine2(370, 150, 105, 0);
+drawLine2(475, 150, 0, -25);
+drawLine2(475, 125, -50, 0);
+drawLine2(425, 125, 0, -75);
+drawLine2(350, 55, 0, 150);
+drawLine2(350, 205, 75, 0);
+drawLine2(425, 205, 0, -20);
+drawLine2(425, 185, -55, 0);
+drawLine2(370, 185, 0, -130);
+drawLine2(275, 150, 0, 200);
+drawLine2(300, 150, 0, 200);
+drawLine2(275, 350, -75, 0);
+drawLine2(300, 350, 75, 0);
+drawLine2(200, 350, 0, 300);
+drawLine2(375, 350, 0, 300);
+drawLine2(200, 650, 175, 0);
+drawLine2(200, 550, -100, 0);
+drawLine2(375, 550, 100, 0);
+drawLine2(100, 550, 0, 100);
+drawLine2(475, 550, 0, 100);
+drawLine2(100, 650, 100, 0);
+drawLine2(475, 650, -100, 0);
+drawLine2(200, 570, -100, 0);
+drawLine2(375,570, 100, 0);
+drawLine2(200, 400, 175, 0);//sandupper
+drawLine2(200, 600, 175, 0);//sandlower
+drawLine2(500, 600, 50, 100);//box
+drawLine2(340 , 350, 0, -35);
+drawLine2(350 , 350, 0, -25);
+drawLine2(340, 315, 40, 0);
+drawLine2(350, 325, 30, 0);
+drawLine2(370, 310, 0, 20);
+drawLine2(380, 315, 0, 10);
+
+ctx7 = canvas2.getContext("2d");
+function fillColor2(initX, initY, width, height, color) {
+ctx7.beginPath();
+ctx7.rect(initX + 37 , initY + 76, width, height - 2);
+ctx7.fillStyle = color;
+ctx7.globalAlpha = 1;
+ctx7.fill();
+}
+fillColor2(200, 400,172, 200, "#964625");
+fillColor2(200, 80, 146, 70, "#1388FD");
+fillColor2(200, 80, 146, 70, "#1388FD");
+fillColor2(370, 80, 52, 70,"#1388FD");
+fillColor2(422, 125, 50, 25, "#1388FD");
+fillColor2(275, 150, 22, 204, "#1388FD");
+fillColor2(200, 350, 172, 50, "#1388FD");
+fillColor2(200, 600, 172, 50, "#1388FD");
+fillColor2(99, 570, 97, 80, "#1388FD");
+fillColor2(375, 570, 97, 80, "#1388FD");
+fillColor2(500, 625, 47,75);
+

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<title>permeability</title>
 </head>
 <body>
@@ -11,9 +11,9 @@
 <div style = "position: relative;left:-345px;top:0px;  width:200px; height:800px; border:solid 10px blue">
 					<h3 style = "color: blue">Permeability Test</h3>
 					<ul style="color:#006599; position:relative; left:-20px; ;top:100px; width:120px;text-align:left">
-					<li><a  href = "#" name="Variable" onclick = "#" style = "text-decoration: none">Variable head test</a></li>
+					<li id = "VHT" href = "" name="Variable" style = "text-decoration: none">Variable head test</li>
 					<br>
-					<li><a  href = "#" name="Constant" onclick = "#" style = "text-decoration: none">Constant head test</a></li>
+					<li a  id = "CHT" href = "" name="Constant" id = "VHT"  style = "text-decoration: none">Constant head test</li>
 				</ul>
 				<button id = "variableButton" onclick = "animations()" type = "button"  value = "Start" style = "position:relative;top:100px">Start</button>
 				<button id = "resetButton"  type = "button" onClick="window.location.reload();" value = "Re Set" style = "position:relative;top:100px">Reset</button>
@@ -24,8 +24,9 @@
             <div id ="shape2"></div>
             <div id ="shape3"></div>
 
-<canvas id = "mycanvas" style = " position:relative;left:110px; top:-820px" ><canvas>
-<canvas id = "mycanvas2"></canvas>
+<canvas id = "mycanvas" style = " position:relative;left:110px; top:-820px; display:block" ></canvas>
+<canvas id = "mycanvas2" style = " position:relative;left:110px; top:-820px; display:none"></canvas>
+
 
 
 </center>
