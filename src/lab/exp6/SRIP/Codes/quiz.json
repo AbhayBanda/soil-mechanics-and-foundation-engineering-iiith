@@ -1,0 +1,260 @@
+{
+    "artciles": [
+        {
+            "quiztitle":"Quiz for Experiment",
+            "containers":"5"
+        },
+        {
+            "q": " Falling head permeability test can be used for ___________",
+            "option": [
+                "Coarse-grained soil",
+                "Less permeable soil",
+                "Clayey soil"
+            ],
+            "answer": "Less permeable soil",
+            "description": "Falling head test is used for relatively less permeable soils where the discharge is small."
+        },
+        {
+            "q": "Variable head test is suitable for _______ type of soils",
+            "option": [
+                "Coarse grained soils",
+                "Fine grained soils",
+                "Cohesive soils"
+            ],
+            "answer": "Option 2",
+            "description": "Explanation for Question 2"
+        },
+        {
+            "q": "Which of the following formula is used in Falling head permeability test",
+            "option": [
+                "Jacky’s formula",
+                "Louden’s formula",
+                "Darcy’s law"
+            ],
+            "answer": "Darcy’s law",
+            "description": "In falling head permeability test, Darcy’s law is used from which the rate of flow q, can be use dq = K i A."
+        },
+        {
+            "q": "In falling head permeability test apparatus, the water head at any time instant is equal to ____________",
+            "option": [
+                "Difference in the water level",
+                "Cross-sectional area of pipe",
+                "Height of permeameter"
+            ],
+            "answer": "Cross-sectional area of pipe",
+            "description": "The head h1 and h2 at any time instant t is equal to the difference in the water level in the stand pipe and the bottom tank."
+        },
+        {
+            "q": " In constant permeability test, the length of specimen is measured by ___________",
+            "option": [
+                "Calculating the difference in water level",
+                "Using Piezometric tube",
+                "Using measuring scale"
+            ],
+            "answer": "In a constant head test, the length of the sample is measured by inserting piezometric tubes on top and bottom.",
+            "description": "Explanation for Question 5"
+        },
+        {
+            "q": "The constant head permeability test is used for ___________",
+            "option": [
+                "Fine-grained soil",
+                "Clay soil",
+                "Coarse-grained soil"
+            ],
+            "answer": "Coarse-grained soil",
+            "description": "Coarse-grained soil, for which a reasonable discharge can be collected in a given time, is used in constant test."
+        },
+        {
+            "q": "The laboratory observation falling head test consist of measurements of ____________",
+            "option": [
+                "None of the mentioned",
+                "All of the mentioned",
+                "Only t1 and t2"
+            ],
+            "answer": "Only t1 and t2",
+            "description": "The laboratory measurement of falling head permeability test consists of measurement of the heads h1 and h2 at two chosen time intervals t1 and t2."
+        },
+        {
+            "q": " Which of the following tubes are used in the constant head test?",
+            "option": [
+                "Inlet tube",
+                "Overflow tube",
+                "All of the mentioned"
+            ],
+            "answer": "All of the mentioned",
+            "description": "The constant head test apparatus consists of three tubes: the inlet tube, the overflow tube and outlet tube."
+        },
+        {
+            "q": "In falling head permeability test, change in the head at a time interval dt is denoted as ___________",
+            "option": [
+                "dh",
+                " –dh",
+                "h"
+            ],
+            "answer": "–dh",
+            "description": "-dh is used to denote a change in a smaller time interval dt, the minus sign has been used since h decreases as t increases."
+        },
+        {
+            "q": "Question 10",
+            "option": [
+                "Option 1",
+                "Option 2",
+                "Option 3"
+            ],
+            "answer": "Option 1",
+            "description": "Explanation for Question 10"
+        },
+        {
+            "q": "The unit of coefficient of absolute permeability(K) is ____________",
+            "option": [
+                "Kg/cm",
+                "m/s2",
+                "m2"
+            ],
+            "answer": "m2",
+            "description": "Since K has the dimension of area (i.e. [k] = [L2]), the unit of K is m2."
+        },
+        {
+            "q": "Coefficient of absolute permeability (K) depends on ____________",
+            "option": [
+                "Permeant",
+                "Properties of soil mass",
+                "Degree of saturation"
+            ],
+            "answer": "Properties of soil mass",
+            "description": "From the equation of coefficient of absolute permeability,K = C (e3/1+e) D3 We can find that coefficient of permeability is independent of the properties of permeant (i.e. water) and it depends solely on the properties of soil mass."
+        },
+        {
+            "q": " In Terzaghi’s formula K = 200De2e2, De2 represents ____________",
+            "option": [
+                "Effective grain shape",
+                "Void ratio",
+                "Effective grain size"
+            ],
+            "answer": "Effective grain size",
+            "description": "De=effective grain size, the diameter of the sphere for which the ratio of its volume to its surface area is the same as the similar ratio for a given assemblage of soil particles."
+        },
+        {
+            "q": "Terzhagi’s formula can be applied for________",
+            "option": [
+                "Uniform sand",
+                "Clay soil",
+                "Coarse-grained soil"
+            ],
+            "answer": "Uniform sand",
+            "description": "Terzaghi’s formula can be successfully applied to fairly uniform sand, which reflects the effect of grain size and void ratio."
+        },
+        {
+            "q": "Gravels are __________ permeable",
+            "option": [
+                "Highly",
+                "Least",
+                "Partially"
+            ],
+            "answer": "Highly",
+            "description": "The pore size in gravel is larger, hence the gravels are highly permeable than sand which is least permeable."
+        },
+        {
+            "q": "Coefficient of permeability or simple permeability is expressed in terms of ___________",
+            "option": [
+                "cm/sec",
+                "m/day",
+                "all of the mentioned"
+            ],
+            "answer": "all of the mentioned",
+            "description": "As the dimension of the coefficient of permeability k are same as those of velocity. It is expressed in terms of cm/sec or m/day or feet/day."
+        },
+        {
+            "q": "Stiff clays are ______________ permeable.",
+            "option": [
+                "Highly",
+                "Least",
+                " Partially"
+            ],
+            "answer": "Least",
+            "description": "As stiff clay does not contain any porous materials, it may be termed as least permeable or impermeable"
+        },
+        {
+            "q": "The study of seepage of water through soil is important for, which of the following purpose?",
+            "option": [
+                "Drainage of soils",
+                "Stability of slopes",
+                "Ground water flow towards well",
+                "All of the mentioned"
+            ],
+            "answer": "All of the mentioned",
+            "description": "The study of seepage of water through soil is important for the following engineering problem i. Ground water towards soil and drainage of soilii. Calculation of seepage through the body of earth dams, and stability of slopes."
+        },
+        {
+            "q": "What are the types of water flow in the soil?",
+            "option": [
+                "Turbulent flow and Laminar flow",
+                "Linear flow",
+                "None of the mentioned"
+            ],
+            "answer": "Turbulent flow and Laminar flow",
+            "description": "The flow of water through soils may be either a laminar flow or turbulent flow."
+        },
+        {
+            "q": "Due to change of temperature, the ᵞw and µ of the liquid reduced by 10% and 40% respectively. What is the change in the permeability of the soil",
+            "option": [
+                "Reduces by 10%",
+                "Reduces by 90%",
+                "Reduces by 40%",
+                "Both a and b"
+            ],
+            "answer": "Both a and b ",
+            "description": "None"
+        },
+        {
+            "q": "If size of the particle increases 2 times then K increases to",
+            "option": [
+                "4 Times",
+                "2 Times",
+                "Decreases"
+            ],
+            "answer": "4 Times",
+            "description": "None"
+        },
+        {
+            "q": "In falling head permeability test apparatus, the water head at any time instant is equal to ____________",
+            "option": [
+                "Difference in the water level",
+                "Cross-sectional area of pipe",
+                "Height of permeameter"
+            ],
+            "answer": "Cross-sectional area of pipe",
+            "description": "The head h1 and h2 at any time instant t is equal to the difference in the water level in the stand pipe and the bottom tank."
+        },
+        {
+            "q": "Based on Allen Hazen experiments, permeability can be expressed as ___________",
+            "option": [
+                "K=CD102",
+                "K=CD210",
+                "K=DC102"
+            ],
+            "answer": "K=CD102",
+            "description": "In 1892, Allen Hazen based on his experiment on filter of sand particles between 0.1 and 3 mm, found that the permeability can be expressed as K=CD102."
+        },
+        {
+            "q": "Physical permeability of a soil KP is related to the coefficient of permeability by the equation ",
+            "option": [
+                "KP=kɳ",
+                "KP=kɳ/γW",
+                "KP=k/ɳ"
+            ],
+            "answer": "KP=kɳ/γW",
+            "description": "In 1937, Muskat pointed out a relationship between physical permeability and Darcy’s coefficient of permeability as KP=kɳ/γW."
+        },
+        {
+            "q": "The effect of structural disturbance is on permeability is more in _____________",
+            "option": [
+                "Fine-grained soil",
+                "Coarse grained soil",
+                "Clay soil"
+            ],
+            "answer": "Fine-grained soil",
+            "description": "The effect of structural disturbance on permeability is much pronounced in fine-grained soil than any other."
+        }
+    ]
+}
