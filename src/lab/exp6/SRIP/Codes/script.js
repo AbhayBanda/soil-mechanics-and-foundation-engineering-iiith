@@ -193,32 +193,27 @@ function waterDrops(x, y) {
         ctx4.closePath();
         ctx4.fill();
 }
-function drop(x, y) {
+function drop(x, y, color) {
 
     ctx.restore();
 
 
-    ctx.fillStyle = "skyblue";
-    ctx.moveTo(x - 5, y);
-    ctx.lineTo(x, y - 7);
-    ctx.lineTo(x + 5, y);
-    ctx.arc(x, y, 5, 0, Math.PI);
+    ctx.fillStyle = color;
+    ctx.moveTo(x - 3, y);
+    ctx.lineTo(x, y - 5);
+    ctx.lineTo(x + 3, y);
+    ctx.arc(x, y, 3, 0, Math.PI);
 
     ctx.closePath();
 
     ctx.fill();
 
-    y = y + 3;
-    if (y == 450) {
-        y = 420;
-    }
-
    
 
-}			drop(240, 420);
+}			/*drop(240, 420);
 			drop(300, 420);
 			drop(360, 420);
-			drop(420, 420);
+			drop(420, 420);*/
 
 
 var yWater = 220-75;
@@ -229,7 +224,7 @@ ctx3 = canvas.getContext("2d");
 function animations()
 {
 
-
+	$("#variableButton").attr("disabled", true);
 	id=window.requestAnimationFrame(animations);
 	if(yWater<320-75){
 			ctx3.fillStyle = "white";
@@ -238,16 +233,32 @@ function animations()
 			ctx3.fillRect(xWater, yWater, 22.5, 1);
 
 
-			ctx5 = canvas.getContext("2d");
-			//var d = document.getElementById("#shape1");
-			document.getElementById("shape1").style.display = "block";
-			/*d.style.position = "relative"
-			d.style.left = "200px"
-			d.style.top = yWater + "px";*/
+
+			i = 0;
+
+			drop(240, 418 + y, "skyblue");
+			drop(300, 418 + y);
+			drop(360, 418 + y);
+			drop(420, 418 + y);
+			i++;
+
+			ctx.fillStyle = "#964625";
+			ctx.fillRect(235, 416, 10, y+0.3);
+			ctx.fillRect(295, 416, 10, y+0.3);
+			ctx.fillRect(355, 416, 10, y+0.3);
+			ctx.fillRect(415, 416, 10, y+0.3);
+
 
 			y += 0.4;
 			y1 += 2
 			yWater += 0.5;
+
+			drop(240, 420 + y ,"skyblue");
+			drop(300, 420 + y);
+			drop(360, 420 + y);
+			drop(420, 420 + y);
+
+
 
 	}
 
@@ -255,12 +266,17 @@ function animations()
 
 
 
-
 	else {
-
+		$("#variableButton").attr("disabled", false);
+			ctx.fillStyle = "#964625";
+			ctx.fillRect(235, 430, 10, y+0.3);
+			ctx.fillRect(295, 430, 10, y+0.3);
+			ctx.fillRect(355, 430, 10, y+0.3);
+			ctx.fillRect(415, 430, 10, y+0.3);
 			cancelAnimationFrame(id);	// Ends the Animation
 		}
 }
+
 
 var canvas2 = document.getElementById("mycanvas2");
 var ctx6 = canvas2.getContext("2d");
@@ -444,7 +460,7 @@ for(var i = 415; i<510; i += 8){
 	}
 }
 for(var i = 537; i<585; i += 8){
-	for(var j = 630; j<680; j = j + 10) {
+	for(var j = 610; j<680; j = j + 10) {
 		waterLines(i, j, i+4, j);
 	}
 }
@@ -453,7 +469,7 @@ var canvas4 = document.getElementById("mycanvas2");
 var ctx10 = canvas4.getContext("2d");
 
 var dots=[];
-var numDots = 300;
+var numDots = 500;
 var width2 = 170;
 var height2 = 90;
 //var bounce = -1;
@@ -470,7 +486,7 @@ function draw() {
     for(j = 0; j < numDots; j++) {
         dot = dots[j];
         ctx10.beginPath();
-        ctx10.arc(dot.x + 240, dot.y + 425, 1.5, 0, Math.PI * 2, false);
+        ctx10.arc(dot.x + 240, dot.y + 425, 0.5, 0, Math.PI * 2, false);
         ctx10.fillStyle = "#442011";
         ctx10.fill();
         
@@ -485,7 +501,7 @@ var canvas6 = document.getElementById("mycanvas2");
 var ctx12 = canvas4.getContext("2d");
 
 var dots=[];
-var numDots = 300;
+var numDots = 500;
 var width2 = 170;
 var height2 = 90;
 //var bounce = -1;
@@ -502,10 +518,9 @@ function draw3() {
     for(j = 0; j < numDots; j++) {
         dot = dots[j];
         ctx12.beginPath();
-        ctx12.arc(dot.x + 240, dot.y + 520, 1.5, 0, Math.PI * 2, false);
+        ctx12.arc(dot.x + 240, dot.y + 520, 0.5, 0, Math.PI * 2, false);
         ctx12.fillStyle = "#442011";
         ctx12.fill();
-        
     }
 }
 ctx12.stroke();
@@ -514,17 +529,115 @@ setInterval(function() {
     draw3();
 }, 1000/24);
 
+//fillColor2(500, 600, 47,50,"#1388FD");
+
+ctx14 = canvas2.getContext("2d");
+function drop2(x, y, color) {
+
+    ctx14.restore();
+
+
+    ctx14.fillStyle = color;
+    ctx14.moveTo(x - 3, y);
+    ctx14.lineTo(x, y - 5);
+    ctx14.lineTo(x + 3, y);
+    ctx14.arc(x, y, 3, 0, Math.PI);
+
+    ctx14.closePath();
+
+    ctx14.fill();
+
+   
+
+}	
+
+
+var constantXWater = 237;
+var constantYWater = 105;
+
+var constantXWater2 = 536;
+var constantYWater2 = 630;
+var yBoxWater = 405;
+//drawLine2(200, 400, 175, 0);//sandupper
+//drawLine2(200, 600, 175, 0);//sandlower
+var ctx13 = canvas2.getContext("2d");
+var ctx14 = canvas2.getContext("2d"); 
+var y3 = 1;
+function animations2()
+{
+$("#constantButton").attr("disabled", true);
+
+	id2=window.requestAnimationFrame(animations2);
+
+	if(constantYWater<145){
+
+			ctx13.fillStyle = "white";
+			ctx13.fillRect(constantXWater, constantYWater, 146, 1);
+			ctx13.fillRect(constantXWater + 170, constantYWater, 51, 1);
+			constantYWater += 0.1;
+
+
+
+
+			drop2(245, 435 + y3, "skyblue");
+			drop2(285, 435 + y3);
+			drop2(365-20, 435 + y3);
+			drop2(425-20, 435 + y3);
+
+			ctx13.fillStyle = "#964625";
+			ctx13.fillRect(240, 435, 10, y3+0.3);
+			ctx13.fillRect(300-20, 435, 10, y3+0.3);
+			ctx13.fillRect(360-20, 435, 10, y3+0.3);
+			ctx13.fillRect(420-20, 435, 10, y3+0.3);
+
+
+			y3 += 0.4;
+			drop2(245, 435 + y3 ,"skyblue");
+			drop2(305-20, 435 + y3);
+			drop2(365-20, 435 + y3);
+			drop2(425-20, 435 + y3);
+
+	}
+	else if (constantYWater>=145 && constantYWater2>610){
+			ctx13.fillStyle = "#964625";
+			ctx13.fillRect(240, 589, 10, 11);
+			ctx13.fillRect(300-20, 589, 10, 11);
+			ctx13.fillRect(340, 589, 10, 11);
+			ctx13.fillRect(400, 589, 10, 11);
+		for(var i = 537; i<585; i += 8){
+	for(var j = 610; j<680; j = j + 10) {
+		waterLines(i, j, i+4, j);
+	}
+}
+		ctx13.fillStyle = "#1388FD";
+		ctx13.fillRect(constantXWater2, constantYWater2, 47, -1);
+		constantYWater2 -= 0.1
+	}
+
+
+if(constantYWater>=145 && constantYWater2<=610 )
+{
+	$("#constantButton").attr("disabled", false);
+	cancelAnimationFrame(id2);
+}
+}
+
+
 
 $(document).ready(function() {
 	$("#VHT").click(function() {
 		$("#mycanvas2").hide();
 		$("#mycanvas").show();
+		$("#variableButton").show();
+		$("#constantButton").hide();
 	});
 });
 $(document).ready(function() {
 	$("#CHT").click(function() {
+		document.getElementById("center").style.height = "650px";
 		$("#mycanvas").hide();
 		$("#mycanvas2").show();
-		document.getElementById("center").style.height = "650px";
+		$("#variableButton").hide();
+		$("#constantButton").show();
 	});
 });

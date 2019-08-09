@@ -3,26 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <style>
-                #shape1{
-                width: 10px;
-                height: 10px;
-                background-color: green;
-                border-radius: 50%;
-                border-top-right-radius: 0;
-                transform: rotate(-45deg);
-                float: left;
-                margin-top: 50px;
-                margin-left: 20px;
-                border: 5px solid #fff;
-                position:relative;
-                top:-350px;
-                left:650px;
-                display:none;
-                opacity:2;
 
-            }
-    </style>
 	<title>permeability</title>
 </head>
 <body style = "margin:8px">
@@ -35,15 +16,11 @@
 					<br>
 					<li a  id = "CHT" href = "" name="Constant" id = "VHT"  style = "text-decoration: none;cursor: pointer;">Constant head test</li>
 				</ul>
-				<button id = "variableButton" onclick = "animations()" type = "button"  value = "Start" style = "position:relative;top:100px">Start</button>
+				<button id = "variableButton" onclick = "animations();" type = "button"  value = "Start" style = "position:relative;top:100px">Start</button>
+                <button id = "constantButton" onclick = "animations2()" type = "button"  value = "Start" style = "position:relative;display:none;top:100px">Start</button>
 				<button id = "resetButton"  type = "button" onClick="window.location.reload();" value = "Re Set" style = "position:relative;top:100px">Reset</button>
 
 </div>
-            <div id ="shape"></div>
-            <div id ="shape1"></div>
-            <div id ="shape2"></div>
-            <div id ="shape3"></div>
-
 <canvas id = "mycanvas" style = " position:relative;left:110px; top:-720px; display:block" ></canvas>
 <canvas id = "mycanvas2" style = " position:relative;left:110px; top:-720px; display:none"></canvas>
 
